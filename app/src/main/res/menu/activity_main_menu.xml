@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_pref"
+        android:title=""
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/action_admin"
+        android:orderInCategory="99"
+        android:title="Acceder administración"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/action_add_pet"
+        android:title="Añadir mascota perdida"
+        android:orderInCategory="99"/>
+    <item
+        android:id="@+id/action_help"
+        android:title="Ayuda en línea"
+        android:orderInCategory="99"/>
+
+    <item
+        android:id="@+id/action_logout_user"
+        android:title="Logout"
+        android:orderInCategory="99"/>
+
+
+
+</menu>

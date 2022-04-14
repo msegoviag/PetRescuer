@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etModifyFechaAparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:inputType="date|textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyLugarAparicion"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyLugarAparicion" />
+
+    <EditText
+        android:id="@+id/etModifyLugarAparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="date|textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyFechaDesaparicion"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyFechaDesaparicion" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="¿Fecha Aparición?"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etModifyFechaAparicion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="¿Lugar aparición?"
+        app:layout_constraintBottom_toBottomOf="@+id/etModifyLugarAparicion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyFechaDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="date|textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyLugarDesaparicion"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyLugarDesaparicion" />
+
+    <EditText
+        android:id="@+id/etModifyRaza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyColor"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyColor" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Fecha Desaparición"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etModifyFechaDesaparicion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Lugar Desaparición"
+        app:layout_constraintBaseline_toBaselineOf="@+id/etModifyLugarDesaparicion"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyLugarDesaparicion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:ems="10"
+        android:inputType="date|textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyRaza"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyRaza" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="34dp"
+        android:text="Raza"
+        app:layout_constraintBottom_toTopOf="@+id/textView29"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="@+id/etModifyPeso"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyPeso" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:layout_marginBottom="49dp"
+        android:text="Color"
+        app:layout_constraintBottom_toTopOf="@+id/textView28"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/etModifyEdad"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyEdad" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="37dp"
+        android:text="Peso"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/etModifyTypePet"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyTypePet" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="38dp"
+        android:text="Edad"
+        app:layout_constraintBottom_toTopOf="@+id/textView26"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyTypePet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/etModifyName"
+        app:layout_constraintTop_toBottomOf="@+id/etModifyName" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="63dp"
+        android:text="Tipo Mascota"
+        app:layout_constraintBottom_toBottomOf="@+id/textView25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
+
+    <Button
+        android:id="@+id/btRemovePet"
+        android:layout_width="185dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:drawableTint="#DD1212"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imModifyPet"
+        app:strokeColor="#F44336" />
+
+    <Button
+        android:id="@+id/btUpdatePet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="9dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="@+id/btRemovePet"
+        app:layout_constraintEnd_toStartOf="@+id/btRemovePet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btModifyImage" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="36dp"
+        android:text="Nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etModifyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/tvId" />
+
+    <Button
+        android:id="@+id/btModifyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="102dp"
+        android:layout_marginEnd="4dp"
+        android:text="Modificar Imagen"
+        app:layout_constraintBottom_toTopOf="@+id/btRemovePet"
+        app:layout_constraintEnd_toEndOf="@+id/etModifyFechaAparicion"
+        app:layout_constraintEnd_toStartOf="@+id/imModifyPet"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="@+id/etModifyName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imModifyPet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="617dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/btRemovePet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btModifyImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_launcher_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>

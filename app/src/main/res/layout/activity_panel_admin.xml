@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btEliminarDB"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/design_default_color_error"
+        android:text="Limpiar toda la DB"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarAvisos"
+        app:rippleColor="@color/teal_200" />
+
+    <Button
+        android:id="@+id/btEliminarBorradas"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="Eliminar borradas"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarProtectoras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarHistorial" />
+
+    <Button
+        android:id="@+id/btEliminarHistorial"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:text="Eliminar historial"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarBorradas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarMascotas" />
+
+    <Button
+        android:id="@+id/btEliminarProtectoras"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:text="Eliminar protectora"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarRescatistas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarBorradas" />
+
+    <Button
+        android:id="@+id/btEliminarAvisos"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:text="Eliminar Avisos"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarDB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarRescatistas" />
+
+    <Button
+        android:id="@+id/btEliminarMascotas"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:text="Eliminar Mascotas"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarHistorial"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarUsuario" />
+
+    <Button
+        android:id="@+id/btEliminarRescatistas"
+        android:layout_width="221dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="29dp"
+        android:text="Eliminar Rescatistas"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarAvisos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btEliminarProtectoras" />
+
+    <Button
+        android:id="@+id/btEliminarUsuario"
+        android:layout_width="217dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="22dp"
+        android:text="Eliminar Usuarios"
+        app:layout_constraintBottom_toTopOf="@+id/btEliminarMascotas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
